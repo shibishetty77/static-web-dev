@@ -54,3 +54,12 @@ if __name__ == "__main__":
     print(f"10 ÷ 2 = {divide(10, 2)}")
     print(f"2 ^ 3 = {power(2, 3)}")
     print(f"√16 = {square_root(16)}")
+
+def test_multiply():
+    assert multiply(3, 4) == 12
+    assert multiply(-2, 5) == -10
+    assert multiply(0, 10) == 0
+
+def test_divide():
+    assert divide(10, 2) == 5
+    assert divide(-10, 2) == -5
